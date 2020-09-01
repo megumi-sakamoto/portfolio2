@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- strip -->
+  <script type="text/javascript" src="js/strip.pkgd.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/strip.css"/>
+</head>
+<body>
+  <header>
+    <h1>Megumi Sakamoto</h1>
+  </header>
+  <main>
+    <div class="tab-wrap">
+       <!-- about -->
+      <input id="TAB-01" type="radio" name="TAB" class="tab-switch" checked="checked" /><label class="tab-label" for="TAB-01">About</label>
+      <div class="tab-content">
+        <div class="about-top flex">
+          <div class="about">
+            <img src="img/icon1.jpg" alt="アイコン" height="180px" width="auto">
+            <div class="about-sp-right">
+              <div class="name">
+                <h2>坂本 萌</h2>
+                <p>(さかもと めぐみ)</p>
+              </div>
+                <ul>
+                  <li>生年月日
+                    <p>&nbsp;1993年5月4日</p></li>
+                  <li>メールアドレス
+                    <p>&nbsp;m999999999333@gmail.com</p></li>
+                </ul>
+            </div>
+          </div>
+          <div class="about-top-text"> 
+            <p>栃木県出身。大学では英米文学を学び、卒業後、英語を使った仕事をしたいと考え、物流業と外国特許業に従事しました。<br>業務改善のため独学でMicrosoft Accessを学び、システムを作成するうちに「コードを書いて何かをつくりたい」と考えるようになり、Web系の勉強を始めて今に至ります。</p>
+          </div>
+        </div>
+        <div class="about-bottom flex">
+          <div class="job-history flex-content">
+          <h3>学歴・職歴</h3>
+          <table>
+            <tr>
+              <th>2012.4-2016.3</th>
+              <td><p>山梨県都留市立都留文科大学 文学部英文学科</p></td>
+            </tr>
+            <tr>
+              <th>2016.4-2017.9</th>
+              <td><p>三井倉庫ロジスティクス株式会社</p></td>
+            </tr>
+            <tr>
+              <th>2018.4-2019.7</th>
+              <td><p>はづき国際特許事務所<br>※現 曙国際特許事務所</p></td>
+            </tr>
+            <tr>
+              <th>2019.8-</th>
+              <td><p>Lionbridge社のWeb広告評価に従事中<br>(パートタイム)</p></td>
+            </tr>
+          </table>
+          </div>
+          <div class="pr flex-content">
+          <h3>自己PR・趣味</h3>
+          <table>
+            <tr>
+              <th><p>自己PR</p></th>
+              <td>
+                <p>これまでの職種では、生産性向上のための業務改善を積極的に行うと同時に、作業の正確性にも努めてきました。その経験を活かし、簡潔で正確な作業を目指します。</p>
+              </td>
+            </tr>
+            <tr>
+              <th><p>趣味</p></th>
+              <td>
+                <p>映画鑑賞、海外旅行</p>
+              </td>
+            </tr>
+          </table>
+          </div>
+        </div>
+      </div>
+       <!-- works -->
+      <input id="TAB-02" type="radio" name="TAB" class="tab-switch" /><label class="tab-label" for="TAB-02">Works</label>
+      <div class="tab-content works flex-content">
+        <div class="works flex-content">
+          <table>
+            <h3>カメラマンのポートフォリオ作成</h3>
+            <div class="works-images">
+              <!-- <a href="img/mywork_1_strip.png" class="strip forpc" data-strip-group="mygroup"><img src="img/mywork_1.png" alt="メインビジュアル"></a>
+              <a href="img/mywork_2_strip.png" class="strip forpc" data-strip-group="mygroup"><img src="img/mywork_2.png" alt="下層ページ"></a>
+              <a href="img/mywork_10_strip.png" class="strip forpc" data-strip-group="mygroup"><img src="img/mywork_10.png" alt="下層ページ"></a>
+              <a href="img/mywork_11_strip.png" class="strip forpc" data-strip-group="mygroup"><img src="img/mywork_11.png" alt="下層ページ"></a> -->
+              <a href="img/mywork_1_strip.png" class="strip forpc" data-strip-group="mygroup"><img src="img/mywork_1.png" width="300px" alt="メインビジュアル"></a>
+              <a href="img/mywork_10_strip.png" class="strip forpc" data-strip-group="mygroup"><img src="img/mywork_10_strip.png" width="300px"  alt="下層ページ"></a>
+              <a href="img/mywork_2_strip.png" class="strip forpc" data-strip-group="mygroup"><img src="img/mywork_2.png" width="300px" alt="下層ページ"></a>
+              <a href="img/mywork_11_strip.png" class="strip forpc" data-strip-group="mygroup"><img src="img/mywork_11_strip.png" width="300px"  alt="下層ページ"></a>
+              
+              <a href="img/mywork_1_strip.png" class="strip mid" data-strip-group="mygroup"><img src="img/mywork_1.png" alt="メインビジュアル" height="300px"></a>
+              <a href="img/mywork_10_strip.png" class="strip mid" data-strip-group="mygroup"><img src="img/mywork_10_strip.png" height="300px"  alt="下層ページ"></a>
+              <a href="img/mywork_2_strip.png" class="strip mid" data-strip-group="mygroup"><img src="img/mywork_2.png" alt="下層ページ" height="250px"></a>
+              <a href="img/mywork_11_strip.png" class="strip mid" data-strip-group="mygroup"><img src="img/mywork_11_strip.png" height="300px"  alt="下層ページ"></a>
+              
+              <a href="img/mywork_1_strip.png" class="strip forsp" data-strip-group="mygroup"><img src="img/mywork_1.png" alt="メインビジュアル" height="300px"></a>
+              <a href="img/mywork_10_strip.png" class="strip forsp" data-strip-group="mygroup"><img src="img/mywork_10_strip.png" height="180px"  alt="下層ページ"></a>
+              <a href="img/mywork_2_strip.png" class="strip forsp" data-strip-group="mygroup"><img src="img/mywork_2.png" alt="下層ページ" height="180px"></a>
+              <a href="img/mywork_11_strip.png" class="strip forsp" data-strip-group="mygroup"><img src="img/mywork_11_strip.png" height="180px"  alt="下層ページ"></a>
+            </div>
+            <!-- <div class="works-images">
+              <a href="img/mywork_10_strip.png" class="strip forpc" data-strip-group="mygroup"><img src="img/mywork_10.png" alt="下層ページ"></a>
+              <a href="img/mywork_11_strip.png" class="strip forpc" data-strip-group="mygroup"><img src="img/mywork_11.png" alt="下層ページ"></a>
+
+            </div> -->
+            <tr>
+              <th><p class="vertical">顧客名</p></th>
+              <td><p>澤海 萌々子　様<br><a href="https://www.instagram.com/moepejic/"><i class="fab fa-instagram"></i> instagram</a>(ID:@moepejic)</p></td>
+            </tr>
+            <tr>
+              <th><p class="vertical">URL</p></th>
+              <td><p><a href="https://momoko-somi.github.io/portfolio/" target="_blank">https://momoko-somi.github.io/portfolio/</a></p></td>
+            </tr>
+            <!-- <tr>
+              <th><p class="vertical">制作期間</p></th>
+              <td><p>約２週間&nbsp;(総作業時間:約85時間)</p></td>
+            </tr>
+            <tr>
+              <th><p class="vertical">使用言語・ソフト</p></th>
+              <td><p>HTML, CSS, jQuery・Photoshop</p></td>
+            </tr>
+            <tr>
+              <th><p class="vertical">顧客の意向</p></th>
+              <td>
+                <p>(1)トップページには、全画面表示の背景画像を使用し、3枚の写真が３秒毎に切り替わる形にしたい。</p>
+                <p>(2)カテゴリ別に写真を分け、整列させて表示したい。</p>
+                <p>(3)(2)で カテゴリ分けした写真は、1枚ずつ拡大して表示し、横スライド式で切り替えられるようにしたい。</p>
+              </td>
+            </tr>
+            <tr>
+              <th><p class="vertical">課題</p></th>
+              <td><p>上記(1)〜(3)を加味し、顧客本人が写真を確認しやすいだけでなく、見る側にも、より沢山の写真を見てもらえる仕組みを作りたいと考えました。具体的には、下記を課題としました。</p>
+              <p>(1)スムーズにトップ画像が切り替わり、視覚的に邪魔にならないこと。</p>
+              <p>(2)カテゴリ分けした上で、カテゴリ間での移動を簡単にし、次々に別カテゴリをクリックしてもらい易くすること。</p>
+              <p>(3)カテゴリ別に写真をグループ化し、選んだ写真から順に、横スライド式で全ての写真を閲覧できるようにすること。</p>
+            </td>
+            </tr>
+            <tr>
+              <th><p class="vertical">課題への対応</p></th>
+              <td>
+                <p>(1)CSSのアニメーションで実装しました。各画像毎に３秒で切り替わる表示はやや速いと考え、フェードを含めて約5秒で切り替わる表示としました。（実際のトップページは <a href="https://momoko-somi.github.io/portfolio/" target="_blank">こちら</a>）
+                </p>
+                <p>(2)各カテゴリの移動をタブ形式にし、ページを切り替えることなく表示させることで、スムーズな移動を目指しました。また、レイアウトは、高さの異なる画像を敷き詰めるグリッドレイアウトにしました。実際の写真のサイズの比率を維持したまま表示させることで、写真をリサイズする手間を省きつつ、整列された印象を保つよう心がけました。（参考画像はこちら <a href="img/mywork_3_example.jpg" class="strip" >タブ形式のカテゴリ分け</a>/<a href="img/mywork_6_example.png" class="strip">グリッドレイアウト</a>）
+                </p>
+                <p>(3)プラグイン"strip"で実装することで、課題を解決しました。その際、初期設定では矢印ボタンや×ボタンが写真に重なってしまうため、写真の表示に影響が無いよう工夫しました。（参考画像はこちら <a href="img/mywork_4_example.jpg" class="strip">before</a>/<a href="img/mywork_5_example.jpg" class="strip">after</a>）</p>
+              </td>
+            </tr> -->
+          </table>
+        </div>
+      </div>
+      <!-- skills -->
+      <input id="TAB-03" type="radio" name="TAB" class="tab-switch" /><label class="tab-label" for="TAB-03">Skills</label>
+      <div class="tab-content">
+        <div class="skills flex clearfix">
+          <div class="Web flex-content">
+            <h3>Webデザイン系</h3>
+            <div class="flex">
+              <div class="skills-text">
+                <table>
+                  <tr>
+                    <th><p>HTML,CSS</p><p>★★★☆☆</p></th>
+                    <td><p>レスポンシブを含め、基本的なコーディングは問題ありません。使用エディタはVisual Studio Codeです。</p></td>
+                  </tr>
+                  <tr>
+                    <th><p>JavaScript</p><p>★☆☆☆☆</p></th>
+                    <td><p>まだまだ勉強中ですが、jQueryを用いてWebサイトを作成した経験があります。</p></td>
+                  </tr>
+                  <tr>
+                    <th><p>Photoshop</p><p>★★☆☆☆</p></th>
+                    <td><p>使用歴3ヶ月ほどですが、Webサイトに掲載する画像の加工経験があります。</p></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="english flex-content">
+            <h3>英語</h3>
+            <div class="flex">              
+              <div class="skills-text">
+                <ul>
+                  <li>TOEIC公開テスト 880点</li>
+                  <li>実用英語技能検定 準1級</li>
+                </ul>
+                <p>2018年4月より、現在まで英語を使って仕事をしています。特許事務所では、外国の特許書類を読むことや、海外との英文メールのやりとりが主な業務でした。<p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer></footer>
+</body>
+</html>
