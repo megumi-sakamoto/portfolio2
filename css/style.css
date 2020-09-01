@@ -1,0 +1,381 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  box-sizing: border-box;
+  z-index: 0;
+  background-color: #fff;
+  height: 100%;
+  font-family: 'Lora', serif;
+  background: black;
+  color: #333;
+}
+
+main{
+  height: 600px;
+}
+
+h1{
+  font-size: 45px;
+  color: #fff;
+  text-align: center;
+  padding-top: 50px;
+}
+
+h2{
+  font-size: 20px;
+}
+
+h3{
+  font-size: 18px;
+}
+
+h4{
+  font-size: 16px;
+  font-weight: normal;
+}
+
+a{
+  color: #333;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+  font-size: 14px;
+}
+
+li::before{
+  content: "-";
+}
+
+li p{
+  padding: 3px;
+}
+
+.forsp,.mid{
+  display: none;
+}
+
+.tab-wrap {
+  height: 100%;
+  min-height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 90%;
+  margin: 50px auto;
+}
+
+.tab-label {
+  max-width: 150px;
+  color: White;
+  font-weight: bold;
+  white-space: nowrap;
+  text-align: center;
+  border:1px solid Gray;
+  padding: 60px .5em;
+  order: -1;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  float:left;
+  font-size: 16px;
+}
+
+.tab-label:hover{
+  box-shadow: 0 0 5px #fff;
+}
+
+.tab-content {
+  display:none;
+  background: #fff;
+  margin-left: 50px;
+
+}
+/* アクティブなタブ */
+.tab-switch:checked+.tab-label {
+  color:#111;
+  background: White;
+  opacity: 1;
+  box-shadow: none;
+}
+.tab-switch:checked+.tab-label+.tab-content {
+  width: calc(100% - 250px); /* - ボタン幅 */
+  /* height: 100%; */
+  padding: 15px 20px;
+  display:block;
+}
+/* ラジオボタン非表示 */
+.tab-switch {
+  display: none;
+}
+
+.about{
+  display: flex;
+}
+
+.about-top{
+  margin-bottom: 15px;
+}
+
+.about-top h2{
+  margin: 20px 0 5px 0;
+}
+
+.about-top ul{
+  margin-left: 5  px;
+}
+
+.tab-content p{
+  line-height: 25px;
+  font-size: 15px;
+}
+
+.about-top-text{
+  margin-top: 10px;
+}
+
+
+img{
+ margin: 10px 20px 15px 0;
+}
+
+.clearfix{
+  clear: both;
+}
+
+.flex{
+  display: flex;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+.skills{
+  flex-direction: column;
+}
+
+.skills-text li{
+  font-size: 16px;
+}
+
+.flex-content{
+  padding: 10px 10px;
+}
+
+.flex-content h3{
+  margin-left: -5px;
+}
+
+.flex-content h3::before{
+  content: "【";
+}
+
+.flex-content h3::after{
+  content: "】";
+}
+
+table{
+  width: 100%;
+}
+
+th{
+  text-align: center;
+  border-right: 1px dotted rgb(117, 116, 116);
+  border-bottom: 1px dotted rgb(117, 116, 116);
+  padding: 10px 5px 10px 5px;
+  font-weight: normal;
+}
+
+td{
+  border-bottom: 1px dotted rgb(117, 116, 116);
+  padding: 5px 0 5px 5px;
+}
+
+.works > table{
+  margin: 30px auto 0 auto;
+}
+
+.works th{
+  width: 15%;
+}
+
+.forsp{
+  display: none;
+}
+
+.works-images{
+  column-count: 2;
+  width: 65%;
+  margin: 0 auto;
+}
+
+.works-images img{
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+  padding: 1% 0;
+}
+
+
+
+
+@media screen and (max-width:960px){
+  .mid{
+    /* display: flex; */
+    display: inline-block;
+  }
+
+  h3{
+    text-align: center;
+  }
+
+  main{
+    height: unset;
+  }
+
+  .tab-wrap {
+    flex-direction: unset;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .tab-label{
+    padding: 20px 40px;
+  }
+
+  .tab-switch:checked+.tab-label+.tab-content {
+    margin-left: 0;
+    width: 100%;
+    margin: 20px 40px;
+  }
+
+  .flex{
+    display: block;
+
+  }
+
+  .about-top{
+    margin-bottom: 0;
+  }
+
+  .flex-content{
+    padding: 10px 10px 20px 10px;
+    margin: 0 auto;
+  }
+
+  .skills .flex-content p{
+    margin-left:0;
+  }
+
+  .forpc{
+    display: none;
+  }
+  
+}
+
+@media screen and (max-width:560px){
+  .forpc, .mid{
+    display: none;
+  }
+
+  .forsp{
+    display: block;
+  }
+
+  h1{
+    font-size: 30px;
+    padding: 32px 0 20px 0;
+  }
+
+  h2{
+    font-size: 18px;
+  }
+
+  h3{
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .flex{
+    padding: 5px;
+  }
+
+  .tab-content p{
+  font-size: 14px;
+  }
+
+  .about-sp-right p{
+    font-size: 13px;
+  }
+
+  .tab-wrap{
+    margin: 0 auto;
+  }
+
+  .tab-switch:checked+.tab-label+.tab-content {
+    margin: 10px;
+    padding: 0;
+  }
+
+  .tab-label{
+    padding: 10px 20px;
+  }
+
+  .flex-content{
+    padding: 10px 5px 10px 5px;
+  }
+
+  .about-top img{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    padding: 10px;
+  }
+
+  .about-sp-right{
+    padding: 0 0 0 10px;
+  }
+
+  .about-top-text{
+    padding: 10px;
+  }
+
+  .about-top h2 {
+    margin: 0;
+  }
+
+  .about-sp-right p{
+    line-height: 20px;
+  }
+
+  .name{
+    margin: 10px 0;
+  }
+
+  img{
+    margin: 0;
+  }
+
+  .works > table{
+    margin: 0 auto;
+    padding: 5px;
+  }
+
+  .works th{
+    text-align: left;
+  }
+
+  .works th p{
+    font-size: 12px;
+ }
+
+ .works-images img{
+   padding: 10px 0;
+ }
+}
